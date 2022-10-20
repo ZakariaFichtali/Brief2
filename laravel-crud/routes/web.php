@@ -1,6 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\promotions_controller;
 
 /*
 |--------------------------------------------------------------------------
@@ -13,16 +14,20 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return 'welcome';
-});
+// Route::get('/', function () {
+//     return 'welcome';
+// });
 
 
-// =====================================================
-Route::get('/{id}', function($id){
-    return 'this is id: ' . $id;
-});
-Route::get('/{id}/{name}', function($id,$name){
-    return 'this is id: '  . $id .'<br>'.'and name is: ' . $name;
-});
+// // =====================================================
+// Route::get('/{id}', function($id){
+//     return 'this is id: ' . $id;
+// });
+// Route::get('/{id}/{name}', function($id,$name){
+//     return 'this is id: '  . $id .'<br>'.'and name is: ' . $name;
+// });
+
+
+
+Route::resource('promotion',promotions_controller::class);
 
