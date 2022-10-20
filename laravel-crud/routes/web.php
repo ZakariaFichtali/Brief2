@@ -13,4 +13,16 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
+Route::get('/', function () {
+    return 'welcome';
+});
+
+
+// =====================================================
+Route::get('/{id}', function($id){
+    return 'this is id: ' . $id;
+});
+Route::get('/{id}/{name}', function($id,$name){
+    return 'this is id: '  . $id .'<br>'.'and name is: ' . $name;
+});
 
