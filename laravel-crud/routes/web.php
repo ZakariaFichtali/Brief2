@@ -14,10 +14,9 @@ use App\Http\Controllers\promotions_controller;
 |
 */
 
-// Route::get('/', function () {
-//     return 'welcome';
-// });
-
+Route::get('/', function () {
+    return view('welcome');
+});
 
 // // =====================================================
 // Route::get('/{id}', function($id){
@@ -29,5 +28,5 @@ use App\Http\Controllers\promotions_controller;
 
 
 
-Route::resource('promotion',promotions_controller::class);
-
+route::get('index',[promotions_controller::class,'index']);
+//

@@ -11,9 +11,10 @@ class promotions_controller extends Controller
      *
      * @return \Illuminate\Http\Response
      */
-    public function index()
+    public function index(Request $request)
     {
-        //
+        $id= $request->name;
+        return $id;
     }
 
     /**
@@ -43,9 +44,13 @@ class promotions_controller extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function show($id)
+
+    //  ======================================================================
+    public function show(Request $request)
     {
-        return 'iiiiiiiiiiiiiiiiiid : '.$id;
+        // $test = $request->input('name');
+        // return $test;
+
     }
 
     /**
