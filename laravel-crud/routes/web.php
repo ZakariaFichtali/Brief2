@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\PromotionController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -12,5 +13,15 @@ use Illuminate\Support\Facades\Route;
 | contains the "web" middleware group. Now create something great!
 |
 */
+Route::get('/', function () {
+    return view('welcome');
+});
+
+
+
+// ------------- select ----------------
+// Route::get('zaax',[PromotionController::class, 'select']);
+
+Route::get('ViewData',[PromotionController::class, 'select']);
 
 
