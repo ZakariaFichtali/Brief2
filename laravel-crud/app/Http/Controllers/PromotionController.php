@@ -7,6 +7,10 @@ use Illuminate\Http\Request;
 
 class PromotionController extends Controller
 {
+
+// ==============================    select  ====================================
+
+
     public function select()
     {
         $data = Promotion::all();
@@ -15,8 +19,14 @@ class PromotionController extends Controller
 
 
 
+// ==============================    Add  ====================================
+public function add(Request $request){
 
+    $newpromotion = new Promotion();
+    $newpromotion->name = $request->name;
+    $newpromotion->save();
 
+ }
 
 
 

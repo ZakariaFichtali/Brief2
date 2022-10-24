@@ -20,16 +20,16 @@ Route::get('/', function () {
 
 
 // ------------- add ----------------
-Route::get('/add',function(){
+Route::get('/add', function () {
     return view('add');
 });
 
+Route::get('/insert',[PromotionController::class, 'add']);
 
 
 
 // ------------- select ----------------
-// Route::get('zaax',[PromotionController::class, 'select']);
-
 Route::get('ViewData',[PromotionController::class, 'select']);
+
 
 
