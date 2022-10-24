@@ -50,6 +50,8 @@
        </tbody>
     </table>
 
+    <br><br>
+    <h3><a style="text-decoration: none" href="/add">Add Promotions</a></h3>
 
 
 </body>

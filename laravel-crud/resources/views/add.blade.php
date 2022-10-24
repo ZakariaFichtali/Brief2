@@ -21,6 +21,8 @@
         <input type="text" name="name" style="border: 2px solide #3e52c0" placeholder="Insert  Promotions">
         <button>OK</button>
     </form>
+<br><br>
+    <h3><a style="text-decoration: none" href="/ViewData">Add Promotions</a></h3>
 
 </body>
 </html>

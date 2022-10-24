@@ -45,6 +45,7 @@ public function add(Request $request){
 public function Edit($id){
     $ziko = Promotion::find($id);
     return view('Edit', compact('ziko'));
+    return redirect("ViewData");
 
 }
 
@@ -55,7 +56,7 @@ public function update($id,Request $request){
     $editpromo = Promotion::find($id);
     $editpromo->name = $request->input('name');
     $editpromo->save();
-    return redirect('ViewData');
+    return redirect("ViewData");
 }
 
 
