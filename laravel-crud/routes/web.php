@@ -14,7 +14,7 @@ use Illuminate\Support\Facades\Route;
 |
 */
 Route::get('/', function () {
-    return view('welcome');
+    return view('ViewData');
 });
 
 
@@ -42,3 +42,8 @@ Route::get('Edit/{id}', [PromotionController::class ,'Edit']);
 
 Route::put('update/{id}', [PromotionController::class ,'update']);
 
+
+
+// ------------- Delete ----------------
+
+Route::get('delete/{id}', [PromotionController::class ,'delete']);

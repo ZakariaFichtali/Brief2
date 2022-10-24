@@ -61,16 +61,15 @@ public function update($id,Request $request){
 
 // ==============================    DELETE  ====================================
 
-public function delete()
-{
-    # code...
+
+    //delete section
+    public function delete(Request $req, $id)
+    {
+        $promo = Promotion::where('id', $id)->delete(["name" => $req->name]);
+        return redirect("ViewData");
+    }
 }
 
 
-
-
-
-
-}
 
 
