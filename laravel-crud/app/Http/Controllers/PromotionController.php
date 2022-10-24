@@ -28,6 +28,43 @@ public function add(Request $request){
 
  }
 
+// ==============================    Edit  ====================================
+
+
+// public function Edit($id)
+// {
+//     $data = Promotion::find($id);
+//     return view('Edit', compact('data'));
+// }
+
+
+
+
+
+
+public function Edit($id){
+    $ziko = Promotion::find($id);
+    return view('Edit', compact('ziko'));
+
+}
+
+// -------------------------->
+
+
+public function update($id,Request $request){
+    $editpromo = Promotion::find($id);
+    $editpromo->name = $request->input('name');
+    $editpromo->save();
+    return redirect('ViewData');
+}
+
+
+// ==============================    DELETE  ====================================
+
+public function delete()
+{
+    # code...
+}
 
 
 
@@ -35,3 +72,5 @@ public function add(Request $request){
 
 
 }
+
+

@@ -1,4 +1,8 @@
 
+{{-- ------------------------ Insert -------------------------- --}}
+
+
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -14,7 +18,6 @@
     <form action="/insert" method="get">
         <input type="text" name="name" style="border: 2px solide #3e52c0" placeholder="Insert  Promotions">
         <button>OK</button>
-
     </form>
 
 </body>

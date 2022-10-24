@@ -33,3 +33,12 @@ Route::get('ViewData',[PromotionController::class, 'select']);
 
 
 
+// ------------- Edit ----------------
+// Route::get('/Edit/{id}', [PromotionController::class, 'Edit']);
+
+
+
+Route::get('Edit/{id}', [PromotionController::class ,'Edit']);
+
+Route::put('update/{id}', [PromotionController::class ,'update']);
+
