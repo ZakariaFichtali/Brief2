@@ -19,6 +19,14 @@ Route::get('/', function () {
 
 
 
+// ------------- add ----------------
+Route::get('/add',function(){
+    return view('add');
+});
+
+
+
+
 // ------------- select ----------------
 // Route::get('zaax',[PromotionController::class, 'select']);
 
