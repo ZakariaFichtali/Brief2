@@ -69,7 +69,29 @@ public function update($id,Request $request){
         $promo = Promotion::where('id', $id)->delete(["name" => $req->name]);
         return redirect("ViewData");
     }
+
+
+
+
+// ==============================    DELETE  ====================================
+
+public function search($name=null){
+    if($name == null){
+        $data =promotion::all();
+        return view('index_search',compact('data'));        }
+    else {
+        $data =promotion::where('name', 'like','%'.$name.'%')->get();
+        return view('index_search',compact('data'));
+    }
 }
+
+
+
+
+
+
+}
+
 
 
 

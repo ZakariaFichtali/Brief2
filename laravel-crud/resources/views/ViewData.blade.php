@@ -12,9 +12,9 @@
 </head>
 <body>
 <h1>Promotions</h1>
-
+<input type="text" name="search" id="search" placeholder="Search  Promotions">
 <form action="" method="get">
-    <input type="text" name="name" style="border: 2px solide #3e52c0" placeholder="Search  Promotions">
+    {{-- <input type="text" name="name" style="border: 2px solide #3e52c0" > --}}
 </form>
 
 @if(\Session:: has('success'))
@@ -30,18 +30,17 @@
       <tr class="btn-dark">
         <th scope="col">ID</th>
         <th scope="col">Name</th>
-        <th scope="col">Edit</th>
-        <th scope="col">Delete</th>
+        <th scope="col">Action</th>
       </tr>
     </thead>
-      <tbody>
+      <tbody id="data">
 
             @foreach ($data as $row )
                 <tr>
                     <td>{{$row->id}}</td>
                     <td>{{$row->name}}</td>
-                    <td><a class="btn btn-success" href="Edit/{{$row->id}}">Edit</a></td>
-                    <td><a class="btn btn-danger" href="{{url('delete/'.$row->id)}}">Delete</a></td>
+                    <td><a class="btn btn-success" href="Edit/{{$row->id}}">Edit</a>
+                    <a class="btn btn-danger" href="{{url('delete/'.$row->id)}}">Delete</a></td>
 
                 </tr>
             @endforeach
@@ -53,6 +52,17 @@
     <br><br>
     <h3><a style="text-decoration: none" href="/add">Add Promotions</a></h3>
 
-
+    <script>
+            let search_inp = document.querySelector('#search');
+            search_inp.addEventListener('keyup', () => {
+                fetch('search/' + search_inp.value, {
+                    method: 'GET'
+                }).then((res)=> {
+                    return res.text();
+                }).then((data) => {
+                    document.getElementById('data').innerHTML = data;
+                })
+            })
+    </script>
 </body>
 </html>

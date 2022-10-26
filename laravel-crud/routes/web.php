@@ -47,3 +47,13 @@ Route::put('update/{id}', [PromotionController::class ,'update']);
 // ------------- Delete ----------------
 
 Route::get('delete/{id}', [PromotionController::class ,'delete']);
+
+
+
+
+
+// ------------- search ----------------
+
+Route::get('search/{name}',[PromotionController::class,'search']);
+
+Route::get('search',[PromotionController::class,'search']);
