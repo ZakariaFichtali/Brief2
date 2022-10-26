@@ -21,7 +21,11 @@
         </style>
     </head>
     <body class="antialiased">
+<<<<<<< Updated upstream
        <h1>welcome</h1>
        <h4><a style="color: crimson" href="ViewData">View Promotions</a></h4>
+=======
+       <h1 style="color: tomato"><a href="ViewData">View Data</a></h1>
+>>>>>>> Stashed changes
     </body>
 </html>
