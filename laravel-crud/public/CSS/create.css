@@ -1,0 +1,163 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+
+    padding: 200px;
+    background-color: #2c3845;
+
+}
+
+.flx{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+input{
+    border-radius: 100px;
+    background: #fff;
+    border: 2px solid #6fb07f;
+    color: #6fb07f;
+    padding: 0px 7px ;
+
+}
+
+h1{
+    text-align: center;
+    color: #6fb07f;
+    margin-bottom: 50px;
+}
+
+@-webkit-keyframes extend {
+    0% {
+        width: 100px;
+        height: 30px;
+        border-radius: 100px;
+        } 100% {
+        width: 100px;
+        height: 30px;
+        border-radius: 100px;
+        margin-left: 190px;
+        background: #6fb07f;
+        }
+    }
+@keyframes extend {
+    0% {
+        width: 100px;
+        height: 30px;
+        border-radius: 100px;
+        }  100% {
+        width: 103px;
+        height: 30px;
+        border-radius: 100px;
+        margin-left: 190px;
+        background: #6fb07f;
+        }
+    }
+
+@-webkit-keyframes disappear {
+    0% {
+        opacity: 1;
+        } 20% {
+        color: #fff;
+        } 100% {
+        opacity: 0;
+        }
+    }
+@keyframes disappear {
+    0% {
+        opacity: 1;
+        } 20% {
+        color: #fff;
+        } 100% {
+        opacity: 0;
+        }
+    }
+
+@-webkit-keyframes appear {
+    0% {
+        opacity: 0;
+        } 70% {
+        opacity: 0;
+        } 100% {
+        opacity: 1;
+        }
+    }
+@keyframes appear {
+    0% {
+        opacity: 0;
+        } 70% {
+        opacity: 0;
+        } 100% {
+        opacity: 1;
+        }
+    }
+html {
+    background: #fff
+    }
+
+input, button, submit {
+    border: none
+    }
+
+
+button {
+    border-width: 1px;
+    width: 100px;
+    height: 35px;
+    /*border-radius*/
+    border-radius: 100px;
+    background: #fff;
+    border: 2px solid #6fb07f;
+    cursor: pointer;
+
+    }
+
+button > span {
+    font-size: 18px;
+    color: #6fb07f
+    }
+
+img {
+    position: absolute;
+    margin: auto;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+    filter: alpha(opacity=0);
+    opacity: 0;
+
+    }
+
+button:focus {
+    /*animation*/
+    -webkit-animation: extend 0.7s ease-in-out;
+    -ms-animation: extend 0.7s ease-in-out;
+    animation: extend 0.7s ease-in-out;
+    -webkit-animation-fill-mode: forwards;
+    /* Chrome, Safari, Opera */
+    animation-fill-mode: forwards
+    }
+
+button:focus > span {
+    /*animation*/
+    -webkit-animation: disappear 0.7s ease-in-out;
+    -ms-animation: disappear 0.7s ease-in-out;
+    animation: disappear 0.7s ease-in-out;
+    -webkit-animation-fill-mode: forwards;
+    /* Chrome, Safari, Opera */
+    animation-fill-mode: forwards
+    }
+
+button:focus > img {
+    /*animation*/
+    -webkit-animation: appear 0.7s ease-in-out;
+    -ms-animation: appear 0.7s ease-in-out;
+    animation: appear 0.7s ease-in-out;
+    -webkit-animation-fill-mode: forwards;
+    /* Chrome, Safari, Opera */
+    animation-fill-mode: forwards
+    }
+
+

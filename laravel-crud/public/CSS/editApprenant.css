@@ -1,0 +1,64 @@
+@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap');
+
+*{
+    font-family: 'Libre Baskerville', serif;
+
+}
+
+body{
+    background-color: #5BB9B8;
+    padding: 70px;
+    line-height: 1.1;
+    -webkit-font-smoothing: antialiased;
+    color: #fff;
+    font-size: 1.6rem;
+
+}
+
+.flx{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+input{
+    border-radius: 100px;
+    background: #fff;
+    border: 2px solid #5BB9B8;
+    color: #5BB9B8;
+    padding: 7px 10px ;
+    width: 93%;
+
+}
+
+form{
+    display: block;
+}
+.a1{
+    display: block;
+}
+.card{
+    background-color: #202932;
+    height:350px ;
+    width: 300px;
+    padding: 30px;
+}
+
+h2
+{
+    font-size: 15px;
+}
+.Modifier{
+    margin-top: 20px;
+    cursor: pointer;
+    background-color: #5BB9B8;
+    border-radius: 15px;
+    border: none;
+    color: white;
+    padding: 8px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 13px;
+}
+

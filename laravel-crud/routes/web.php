@@ -1,7 +1,8 @@
 <?php
 
-use App\Http\Controllers\PromotionController;
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\PromotionsController;
+use App\Http\Controllers\ApprenantsController;
 
 /*
 |--------------------------------------------------------------------------
@@ -13,47 +14,19 @@ use Illuminate\Support\Facades\Route;
 | contains the "web" middleware group. Now create something great!
 |
 */
+
 Route::get('/', function () {
     return view('welcome');
 });
 
+// Route::get('/promotions', function () {
+//     return view('index');
+// });
 
+Route::resource('promotions',PromotionsController::class);
+Route::get('/search',[PromotionsController::class,'search']);
 
-// ------------- add ----------------
-Route::get('/add', function () {
-    return view('add');
-});
+Route::resource('gestionstud',ApprenantsController::class);
 
-Route::get('/insert',[PromotionController::class, 'add']);
-
-
-
-// ------------- select ----------------
-Route::get('ViewData',[PromotionController::class, 'select']);
-
-
-
-// ------------- Edit ----------------
-// Route::get('/Edit/{id}', [PromotionController::class, 'Edit']);
-
-
-
-Route::get('Edit/{id}', [PromotionController::class ,'Edit']);
-
-Route::put('update/{id}', [PromotionController::class ,'update']);
-
-
-
-// ------------- Delete ----------------
-
-Route::get('delete/{id}', [PromotionController::class ,'delete']);
-
-
-
-
-
-// ------------- search ----------------
-
-Route::get('search/{name}',[PromotionController::class,'search']);
-
-Route::get('search',[PromotionController::class,'search']);
+Route::get('gestionstud/create/{id}',[ApprenantsController::class,'create'])->name('gestion.insert');
+Route::get('gestion/editstudent/{id}',[ApprenantsController::class,'edit'])->name('gestion.editstudent');

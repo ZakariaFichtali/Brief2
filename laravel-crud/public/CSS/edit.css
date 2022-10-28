@@ -1,0 +1,196 @@
+@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap');
+
+*{
+    font-family: 'Libre Baskerville', serif;
+
+}
+
+body{
+    background-color: #5BB9B8;
+    padding: 30px 150px 0px 150px;
+    line-height: 1.1;
+    -webkit-font-smoothing: antialiased;
+    color: #fff;
+    font-size: 1.6rem;
+
+}
+input{
+    border-radius: 100px;
+    background: #fff;
+    border: 2px solid #6fb07f;
+    color: #6fb07f;
+    padding: 0px 7px ;
+
+}
+
+
+.tit{
+    text-align: center;
+}
+
+
+
+
+/* =========================================================================== */
+table{
+    width: 100%;
+    text-align: left;
+    background-color: #2c3845;
+    color: #fff;
+}
+/*
+thead{
+    background-color: #df019d;
+}
+
+td{
+    background-color: #01dcc9;
+}
+tr:nth-child(even) {
+    background-color: #007bff;
+}
+
+ */
+
+
+
+table {
+    border-collapse: collapse;
+    color: #fff;
+    margin-bottom: 20px;
+
+
+  }
+ table tr:nth-child(odd){
+        background: #202932;
+    color: #fff;
+
+
+    }
+table th{
+
+    color: #3E5260;
+    padding:12px;
+    color: #fff;
+
+  }
+table td{
+
+    color: #ed1708;
+    padding:12px;
+    width:90px;
+    color: #fff;
+
+  }
+
+
+  .fa-solid{
+    background-color: #fff;
+    color: #fff;
+  }
+
+i{
+    background-color: #fff;
+    color: #fff;
+}
+
+.Modifier{
+    cursor: pointer;
+    background-color: #4CAF50;
+    border-radius: 5px;
+    border: none;
+    color: white;
+    padding: 6px 16px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    transition: 1s;
+
+}.Modifier:hover{
+    background-color: #62d366;
+
+}
+
+.Supprimer{
+    cursor: pointer;
+    background-color: #b91509;
+    border-radius: 5px;
+    border: none;
+    color: white;
+    padding: 6px 16px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    transition: 1s;
+
+}.Supprimer:hover{
+
+        background-color: #f72617;
+
+}
+
+td{
+    font-size: 18px;
+}
+
+
+
+
+input{
+    margin: 10px;
+    cursor: pointer;
+    background-color: #202932;
+    border-radius: 5px;
+    border: none;
+    padding: 12px 32px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+    outline: none;
+    color: white;
+}
+
+
+button{
+    margin: 10px;
+    cursor: pointer;
+    background-color: #45a148;
+    border-radius: 5px;
+    border: none;
+    padding: 7px 22px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+    outline: none;
+    color: white;
+    transition: 1s;
+}
+
+/* ============================================================= */
+
+
+.Ajouter{
+    text-align: center;
+    color: #fff;
+    font-size: 15px;
+    text-decoration: none;
+    margin-top: 30px;
+    background-color: #13477b;
+    border-radius: 5px;
+    border: none;
+    padding: 7px 22px;
+    transition: 1s;
+}
+.Ajouter:hover{
+    background-color: #69b4ff;
+
+}
+.g{
+    background-color: #202932;
+    color: #fff;
+    display: flex;
+}
+
+

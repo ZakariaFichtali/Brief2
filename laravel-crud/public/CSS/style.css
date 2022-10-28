@@ -1,0 +1,218 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap');
+
+*{
+    font-family: 'Libre Baskerville', serif;
+
+}
+body{
+    background-color: #5BB9B8;
+    padding: 30px 150px 0px 150px;
+    color: #fff;
+    font-size: 1.6rem;
+
+
+}
+html,body {
+
+      height: 100%;
+      overflow: hidden;
+
+  }
+
+
+  .el2{
+    margin-bottom: 50px;
+  }
+
+p {
+    text-align: center;
+    margin: 5px 0 60px;
+    font-size: 16px;
+    background-color: #2c3845;
+    border-radius: 4px;
+    padding: 6px;
+    color: #fff;
+
+  }
+
+  .main{
+    background-color: #2C3845;
+
+  }
+
+  h1 {
+    font-size: 35px;
+    text-align: center;
+    font-weight: 300;
+  }
+
+
+  .AjouterPromotion{
+    /* margin-bottom: 50px; */
+    /* background-color: #202932; */
+  }
+  .addd{
+    cursor: pointer;
+    background-color: #202932;
+    border-radius: 5px;
+    border: none;
+    color: white;
+    padding: 12px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+  }
+
+
+  .Search{
+    cursor: pointer;
+    float: right;
+    background-color: #202932;
+    border-radius: 5px;
+    border: none;
+    padding: 12px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    outline: none;
+    color: white;
+
+  }
+
+  input{
+    color: #fff;
+
+  }
+
+  a{
+    color: #fff;
+
+  }
+
+
+/* =========================================================================== */
+ table{
+    width: 100%;
+    text-align: left;
+    background-color: #2c3845;
+    color: #fff;
+    height: auto;
+}
+/*
+thead{
+    background-color: #df019d;
+}
+
+td{
+    background-color: #01dcc9;
+}
+tr:nth-child(even) {
+    background-color: #007bff;
+}
+
+ */
+
+
+
+table {
+    border-collapse: collapse;
+    color: #fff;
+
+
+
+  }
+ table tr:nth-child(odd){
+        background: #202932;
+    color: #fff;
+
+
+    }
+table th{
+
+    color: #3E5260;
+    padding:12px;
+    color: #fff;
+
+  }
+table td{
+
+    color: #ed1708;
+    padding:12px;
+    width:90px;
+    color: #fff;
+
+  }
+
+
+  .fa-solid{
+    background-color: #fff;
+    color: #fff;
+  }
+
+i{
+    background-color: #fff;
+    color: #fff;
+}
+button{
+
+
+    border: none;
+    background: none;
+    color: white;
+
+
+}
+
+
+
+.Modifier{
+    cursor: pointer;
+    background-color: #4CAF50;
+    border-radius: 5px;
+    border: none;
+    color: white;
+    padding: 6px 16px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+}
+
+.Supprimer{
+    cursor: pointer;
+    background-color: #ed1708;
+    border-radius: 5px;
+    border: none;
+    color: white;
+    padding: 6px 16px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+}
+
+td{
+    font-size: 18px;
+}
+button{
+
+
+    border: none;
+    background: none;
+    color: white;
+
+
+}
+
+
+
+
+
+
+
+/* ============================================================= */
+
+
